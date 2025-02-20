@@ -1,0 +1,201 @@
+.typing {
+    display: inline-block;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid rgb(255, 255, 255);
+    animation: blinkCursor 0.9s step-end infinite;
+
+}
+
+@keyframes blinkCursor {
+    50% { border-color: transparent; }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-color: #2a012d;
+    background-position: center ;
+    background-size: cover;
+    background-image: url(/assets/bg.jpg);
+    /* background-image: linear-gradient(45deg, rgba(86, 86, 86,0.04) 0%, rgba(86, 86, 86,0.04) 50%,rgba(169, 169, 169,0.04) 50%, rgba(169, 169, 169,0.04) 71%,rgba(251, 251, 251,0.04) 71%, rgba(251, 251, 251,0.04) 100%),linear-gradient(45deg, rgba(86, 86, 86,0.04) 0%, rgba(86, 86, 86,0.04) 56%,rgba(169, 169, 169,0.04) 56%, rgba(169, 169, 169,0.04) 67%,rgba(251, 251, 251,0.04) 67%, rgba(251, 251, 251,0.04) 100%),linear-gradient(135deg, rgba(86, 86, 86,0.04) 0%, rgba(86, 86, 86,0.04) 4%,rgba(169, 169, 169,0.04) 4%, rgba(169, 169, 169,0.04) 75%,rgba(251, 251, 251,0.04) 75%, rgba(251, 251, 251,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0)); */
+    color: white;
+    font-family: monospace;
+    font-size: 2rem;
+    overflow-y: hidden;
+}
+
+main
+{
+    text-align: center;
+    border: white 1px solid;
+    padding: 40px;
+    /* From https://css.glass */
+    background: rgba(159, 151, 151, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    box-shadow: 5px 5px 10px rgba(33, 33, 33, 0.6);
+}
+.text
+{
+    height: 50px;
+    text-shadow: #131313 2px 2px 4px;
+}
+.text span
+{
+    height: 40px;
+}
+
+.links {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 10px;
+   
+    
+}
+
+
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88px; /* Stały kwadrat */
+    height: 88px;
+    border: 2px solid white;
+    text-decoration: none;
+    border-radius: 14px;
+    font-size: 32px; /* Rozmiar ikony */
+    position: relative;
+    color: white;
+    box-shadow: 3px 3px 6px rgba(33, 33, 33, 0.6);
+}
+
+.links a i {
+    font-size: 40px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.links a span {
+    font-size: 11px;
+    font-weight: bold;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 6px; /* Odstęp od dolnej krawędzi */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-shadow: #131313 1px 1px 2px;
+    color: white !important;
+   
+}
+
+
+#link1
+{
+    background: #1ed760;
+    transition: 0.3s all;
+}
+#link2
+ {
+    background: rgb(254, 50, 73);
+
+    transition: 0.3s all;
+}
+#link3
+{
+    background: rgb(51,200,211);
+
+    transition: 0.3s all;
+}
+#link4
+ {
+    background: #443850;
+    transition: 0.3s all;
+}
+#link5
+{
+    background: #d72539;
+    transition: 0.3s all;
+    
+}
+
+
+
+#link1:hover
+ {
+    background: #131313;
+    color: #1ed760;
+    border: 2px solid #131313;
+}
+#link2:hover
+{
+    background: #131313;
+    color: rgb(254, 50, 73);
+    border: 2px solid #131313;
+}
+#link3:hover
+{
+    background: #131313;
+    color: rgb(51,200,211);
+    border: 2px solid #131313;
+}
+
+#link4:hover
+ {
+    background: #131313;
+    color: #443850;
+    border: 2px solid #131313;
+}
+
+#link5:hover
+{
+    background: #131313;
+    color: #ff1a35;
+    border: 2px solid #131313;
+}
+
+
+
+
+
+@media screen and (max-width:600px)
+
+{
+    main
+    {
+        padding: 13px;
+        width: 90%;
+    }
+    .links
+    {
+        flex-direction:column;
+        align-items: center;
+        gap: 7px;
+        margin-top: 2px;
+    }    
+    .text
+    {
+    
+        margin-top: 10px;
+        font-size: 1.5rem;
+        height: 50px;
+        text-shadow: #131313 2px 2px 4px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .text span
+    {
+        height: 2rem;
+    }
+}
