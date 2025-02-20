@@ -40,6 +40,7 @@ main
     backdrop-filter: blur(6.8px);
     -webkit-backdrop-filter: blur(6.8px);
     box-shadow: 5px 5px 10px rgba(33, 33, 33, 0.6);
+
 }
 .text
 {
@@ -74,6 +75,7 @@ main
     position: relative;
     color: white;
     box-shadow: 3px 3px 6px rgba(33, 33, 33, 0.6);
+    
 }
 
 .links a i {
@@ -165,7 +167,31 @@ main
     border: 2px solid #131313;
 }
 
+#close
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.3s all;
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
 
+#close:hover
+{
+    background-color: white;
+    color:rgb(255, 0, 0);
+}
 
 
 
@@ -198,4 +224,12 @@ main
     {
         height: 2rem;
     }
+}
+
+@media screen and (min-width:601px) and (min-height:300px)
+{
+    /* main:hover
+    {
+        transform: font-size(1.10);
+    } */
 }
