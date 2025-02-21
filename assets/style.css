@@ -142,7 +142,7 @@ main
 }
 #link4
  {
-    background: #443850;
+    background: #2d2436;
     transition: 0.3s all;
 }
 #link5
@@ -176,7 +176,7 @@ main
 #link4:hover
  {
     background: #131313;
-    color: #443850;
+    color: rgb(165, 103, 227);
     border: 2px solid #131313;
 }
 
